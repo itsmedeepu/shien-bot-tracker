@@ -10,8 +10,11 @@ const Test = async (msg) => {
 const style = { parse_mode: "HTML" };
 
 const Start = async (msg) => {
+
+
   const chatId = msg.chat.id;
 
+  console.log(chatId)
     bot.sendMessage(
       chatId,
       `<i> Hii <b> ${msg.from.first_name}</b> I'm Shien Verse Stock tracker bot  developed by </i> {@packmanpro}`,
